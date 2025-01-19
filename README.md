@@ -47,7 +47,7 @@ Personal Tor es una herramienta para garantizar el anonimato de activistas y hac
 ## Si teneis problemas para ejecutar cambie permisos:
     ````
     ┌──(suusuario㉿sumachine)-[~/midirectorio]
-    └─$sudo chmod +x pTor.sh
+    └─$sudo chmod +x personalTor.sh
     ````
 # Manual Test (verifique que teneis todo bien):
 
