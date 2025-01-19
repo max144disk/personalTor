@@ -4,7 +4,8 @@
 /    Y    \/ __ \_>    < |   /    ^   /    ^   /
 \____|__  (____  /__/\_ \|___\____   |\____   | 
         \/     \/      \/         |__|     |__| 
-Collection scripts        
+Collection scripts
+Personal Site: https://max144.substack.com/
 ```
 # PersonalTor - Mantenga sus IPs privadas y randomizadas
 
