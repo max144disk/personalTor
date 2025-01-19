@@ -47,6 +47,16 @@
 # SiteOficialTornet  : https://pypi.org/project/tornet/
 #
 # Uso:
+# - Configure seu firefox
+#     - Settings/General/Network Settings/
+#        - Configure Proxy Access to the Internet
+#        - Manual proxy configuration
+#             - SOCKS Host = 127.0.0.1 PORT:9050
+#        - OK
+#     - Start TOR
+#     - Start Tornet
+#    - Be Anonymnous user
+#
 # - Descargue el script y ejecutelo con bash
 # - Siga las instrucciones del menu interactivo
 #
