@@ -18,6 +18,17 @@ Personal Tor es una herramienta para garantizar el anonimato de activistas y hac
 
 * * Usar preferiblemente con Kali Linux
 
+# Siempre antes del uso "Activar Manual Proxy" en Firefox
+ - Configure seu firefox
+     - Settings/General/Network Settings/
+        - Configure Proxy Access to the Internet
+        - Manual proxy configuration
+             - SOCKS Host = 127.0.0.1 PORT:9050
+        - OK
+     - Start TOR
+     - Start Tornet
+    - Be Anonymnous user
+
 # Ejecutar con:
     - sudo ./personalTor.sh
 
