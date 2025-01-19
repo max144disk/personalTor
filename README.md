@@ -33,20 +33,22 @@ Personal Tor es una herramienta para garantizar el anonimato de activistas y hac
 # Ejecutar con:
     - sudo ./personalTor.sh
 
-## No recomendable usar cambios de IP con intervalos inferiores a 5 segundos
-## Por defecto dejamos en 10 segundos
-## Para un uso mas relajado 60 segundos es ideal
+- No recomendable usar cambios de IP con intervalos inferiores a 5 segundos
+- Por defecto dejamos en 10 segundos
+- Para un uso mas relajado 60 segundos es ideal
 
-## Para verificar que estais en una rede Tor Activa:
-  - https://check.torproject.org/
-## Para verificar sus rutas de IP y el IP actual:
-  - https://www.dnsleaktest.com/
+- Para verificar que estais en una rede Tor Activa:
+  - - https://check.torproject.org/
+- Para verificar sus rutas de IP y el IP actual:
+  - - https://www.dnsleaktest.com/
 
 
 
 ## Si teneis problemas para ejecutar cambie permisos:
-    - chmod +x pTor.sh
-
+    ````
+    ┌──(suusuario㉿sumachine)-[~/midirectorio]
+    └─$sudo chmod +x pTor.sh
+    ````
 # Manual Test (verifique que teneis todo bien):
 
 - Para ejecutar el tornet como test:
