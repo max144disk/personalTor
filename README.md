@@ -129,3 +129,10 @@ Seleccione una opcion:
 #⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠷⢦⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣠⣴⠶⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 #⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠛⠿⠿⠿⠿⠿⠿⠿⠿⠿⠟⠛⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ```
+# Palabras
+
+* Mucha gente habla del uso de VPNs para mantenerse anonimo, pero no sabemos bien cual de estas empresas están involucradas con la venta de datos a gobiernos o instituciones que no tenemos control, con esta idea he creado eso para ayudar a hacer un poco mas facil la vida de personas que son "periodistas" o "activistas" o hasta "hactivistas" de algun movimiento y necesitan un poco mas de privacidade contra rastreos de terceros o persecución gobernamental.
+* La maior parte de la gente no sabe se proteger, algunos intentan solo usando Linux o una version de TAILS que es muy bueno hasta cierto punto, pero tener certeza de que sus IPs estan cambiando es mejor.
+* Algunas empresas de VPN tienen en sus altos rangos o en su entorno de inversores personas ligadas a  gobiernos o instituciones de espionage para callar la voz del pueblo.
+* Espero de esta manera contribuir con algo.
+* Por una internet libre para todos.
