@@ -10,6 +10,7 @@ Personal Site: https://max144.substack.com/
 # PersonalTor - Mantenga sus IPs privadas y randomizadas
 
 ### Interfaz
+```
 ______                               _   _____          
 | ___ \                             | | |_   _|         
 | |_/ /__ _ __ ___  ___  _ __   __ _| |   | | ___  _ __ 
@@ -26,7 +27,7 @@ PersonalTor - Menu
 Para Salir use CTRL+C
 ==============================
 Seleccione una opcion: 
-
+```
 
 - Personal Tor es una herramienta para garantizar el anonimato de activistas y hacktivistas usando herramientas como TOR y Tornet en una interfaz rapida de usar.
 
