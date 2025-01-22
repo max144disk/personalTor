@@ -5,7 +5,7 @@
 \____|__  (____  /__/\_ \|___\____   |\____   | 
         \/     \/      \/         |__|     |__| 
 Collection scripts
-Personal Site: https://max144.substack.com/
+Personal Hacktivism Site: https://max144.substack.com/
 ```
 # PersonalTor - Mantenga sus IPs privadas y randomizadas
 
@@ -18,15 +18,28 @@ ______                               _   _____
 | | |  __/ |  \__ \ (_) | | | | (_| | |   | | (_) | |   
 \_|  \___|_|  |___/\___/|_| |_|\__ _|_|   \_/\___/|_|   
 ==============================
-PersonalTor - Menu
+Menu
 ==============================
 1. Iniciar Tor
 2. Detener Tor
-3. Iniciar Tornet para parar use CTRL+C
-4. Ver HELP
-Para Salir use CTRL+C
+                              
 ==============================
-Seleccione una opcion: 
+3. Iniciar Tornet [para parar use CTRL+C]
+4. Actualizar Tornet
+                              
+==============================
+5. Ver HELP
+==============================
+                              
+6. Salir
+Para Salir use CTRL+C
+                              
+==============================
+Seleccione una opcion: 3
+¿Cada cuántos segundos deseas cambiar tu IP? (por defecto: 10):
+10
+Iniciando Tornet...
+
 ```
 
 - Personal Tor es una herramienta para garantizar el anonimato de activistas y hacktivistas usando herramientas como TOR y Tornet en una interfaz rapida de usar.
