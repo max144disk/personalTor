@@ -117,8 +117,6 @@ echo ""
 # Esperar presionar una tecla para continuar
 read -n 1 -s -r -p "Presione cualquier tecla para continuar..."
 
-
-
 }
 
 ## Funciones de TOR
@@ -155,11 +153,18 @@ function stop_tornet() {
     sudo tornet --stop
 }
 
-# Funcion salir
-function exitar() {
+# Funcion CTRL+C
+function ctrl_c() {
     echo "Saliendo..."
-    break
+    exit 0
 }
+
+# Function actualizar Tornet
+function update_tornet() {
+    echo "Actualizando Tornet..."
+    sudo tornet --auto-fix
+}
+
 
 
 ## Menu Aplicacion PersonalTor
@@ -171,13 +176,22 @@ while true; do
     echo "| | |  __/ |  \__ \ (_) | | | | (_| | |   | | (_) | |   "
     echo "\_|  \___|_|  |___/\___/|_| |_|\__ _|_|   \_/\___/|_|   "
     echo "=============================="
-    echo "PersonalTor - Menu"
+    echo "Menu"
     echo "=============================="
     echo "1. Iniciar Tor"
     echo "2. Detener Tor"
-    echo "3. Iniciar Tornet para parar use CTRL+C"
-    echo "4. Ver HELP"    
+    echo "                              "    
+    echo "=============================="
+    echo "3. Iniciar Tornet [para parar use CTRL+C]"
+    echo "4. Actualizar Tornet"
+    echo "                              "
+    echo "=============================="
+    echo "5. Ver HELP"    
+    echo "=============================="
+    echo "                              "    
+    echo "6. Salir"     
     echo "Para Salir use CTRL+C"
+    echo "                              "    
     echo "=============================="
     read -p "Seleccione una opcion: " option
     case $option in
@@ -191,8 +205,14 @@ while true; do
             start_tornet
             ;;
         4)
+            update_tornet
+            ;;
+        5)
             help
-            ;;            
+            ;;         
+        6)
+            ctrl_c
+            ;;         
         *)
             echo "Opcion no valida."
             ;;
