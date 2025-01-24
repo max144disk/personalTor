@@ -4,11 +4,11 @@ Personal Hacktivism Site: https://max144.substack.com/
 ```
 # PersonalTor - Mantenga sus IPs privadas y randomizadas
 
-- USO:
-
+## USO:
+```
     ┌──(suusuario㉿sumachine)-[~/midirectorio]
     └─$sudo ./personalTor.sh
-
+```
 ### Interfaz
 ```  
 ╔══════════════════════════════════════════════════════════════════════╗
