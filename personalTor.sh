@@ -8,6 +8,9 @@ BLUE='\033[0;34m'
 CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
+# Variables
+tornet_status=${RED}TORNET${NC}
+
 # Function to display the header
 display_header() {
     echo -e "${CYAN}╔══════════════════════════════════════════════════════════════════════╗${NC}"
@@ -125,18 +128,18 @@ function stop_tor() {
 function status_tor(){
     echo -e "${YELLOW}Verificando Status da rede Tor...${NC}"
     if systemctl is-active --quiet tor; then
-        echo -e "${GREEN}ACTIVO${NC}"
+        echo -e "${GREEN}TOR${NC}"
     else
-        echo -e "${RED}NO ACTIVO${NC}"
+        echo -e "${RED}TOR${NC}"
     fi
 }
 
 # Saber si TOR ya esta activo para el menu
 function status_tor_menu(){
     if systemctl is-active --quiet tor; then
-        echo -e "${GREEN}ACTIVO${NC}"
+        echo -e "${GREEN}TOR${NC}"
     else
-        echo -e "${RED}NO ACTIVO${NC}"
+        echo -e "${RED}TOR${NC}"
     fi
 }
 
@@ -183,26 +186,22 @@ function see_actual_ip(){
 function start_tornet() {
     # Tiempo de espera para cambiar la IP en segundos para tornet
     interval=60
-
     # Preguntar el intervalo de tiempo para cambiar la IP de interval 
     echo -e "${YELLOW}¿Cada cuántos segundos deseas cambiar tu IP? (por defecto: 10):${NC}"
     read -r interval
     interval=${interval:-10} # Si no se ingresa un valor, usa 10    
 
     echo -e "${YELLOW}Iniciando Tornet...${NC}"
-    sudo tornet --interval "$interval" --count 0
+    sudo tornet --interval "$interval" --count 0 &> /dev/null &
+    tornet_status=true
 }
 
 # Funcion de stop Tornet
 function stop_tornet() {
     echo -e "${YELLOW}Deteniendo Tornet...${NC}"
-    sudo tornet --stop
-}
-
-# Funcion CTRL+C
-function ctrl_c() {
-    echo -e "${YELLOW}"Saliendo..."${NC}"
-    exit 0
+    sudo tornet --stop &> /dev/null &
+    tornet_status=false
+    echo "Tornet ha sido detenido."
 }
 
 # Function actualizar Tornet
@@ -211,13 +210,31 @@ function update_tornet() {
     sudo tornet --auto-fix
 }
 
+# Saber si TORNET ya esta activo para el menu
+function status_tornet_menu(){
+    if $tornet_status
+    then
+        echo -e "${GREEN}TORNET${NC}"
+    else
+        echo -e "${RED}TORNET${NC}"
+    fi
+}
+
+# Funcion CTRL+C
+function ctrl_c() {
+    echo -e "${YELLOW}"Saliendo..."${NC}"
+    exit 0
+}
+
+
+
 
 
 ## Menu Aplicacion PersonalTor
 while true; do
     display_header
     echo -e "${CYAN}╔══════════════════════════════════════════════════════════════════════╗${NC}"
-    echo -e "${CYAN}║${YELLOW}  Menu ${BLUE}TOR:${NC} $(status_tor_menu) IP: $(see_actual_ip) MAC:$(see_actual_mac)"
+    echo -e "${CYAN}║${YELLOW}  Menu ${NC} $(status_tor_menu) $(status_tornet_menu) IP: $(see_actual_ip) MAC: ${GREEN}$(see_actual_mac)"
     echo -e "${CYAN}╚══════════════════════════════════════════════════════════════════════╝${NC}"
     echo -e "${CYAN}╔══════════════════════════════════════════════════════════════════════╗${NC}"    
     echo "1. Status Tor"
@@ -225,17 +242,18 @@ while true; do
     echo "3. Detener Tor"
     echo -e "${CYAN}╚══════════════════════════════════════════════════════════════════════╝${NC}"
     echo -e "${CYAN}╔══════════════════════════════════════════════════════════════════════╗${NC}"
-    echo "4. Iniciar Tornet [para parar use CTRL+C]"
-    echo "5. Actualizar Tornet"
+    echo "4. Iniciar Tornet"
+    echo "5. Parar Tornet"    
+    echo "6. Actualizar Tornet"
     echo -e "${CYAN}╚══════════════════════════════════════════════════════════════════════╝${NC}"
     echo -e "${CYAN}╔══════════════════════════════════════════════════════════════════════╗${NC}"
-    echo "6. Cambiar MAC Address"    
+    echo "7. Cambiar MAC Address"    
     echo -e "${CYAN}╚══════════════════════════════════════════════════════════════════════╝${NC}"    
     echo -e "${CYAN}╔══════════════════════════════════════════════════════════════════════╗${NC}"
-    echo "7. Ver HELP ?"    
+    echo "8. Ver HELP ?"    
     echo -e "${CYAN}╚══════════════════════════════════════════════════════════════════════╝${NC}"     
     echo -e "${CYAN}╔══════════════════════════════════════════════════════════════════════╗${NC}"
-    echo "8. Salir"     
+    echo "9. Salir"     
     echo -e "${CYAN}╚══════════════════════════════════════════════════════════════════════╝${NC}"
     read -p "Seleccione una opcion: " option
     case $option in
@@ -249,18 +267,26 @@ while true; do
             stop_tor
             ;;
         4)
+            start_tor
             start_tornet
+            status_tor
             ;;
-        5)
+        5) 
+            stop_tor
+            stop_tornet
+            status_tor
+            ;;
+        6)
             update_tornet
             ;;
-        6) 
+        7) 
             start_macchanger
             ;;
-        7)
+        8)
             help
             ;;         
-        8)
+        9)
+            stop_tornet
             stop_tor
             ctrl_c
             ;;         
