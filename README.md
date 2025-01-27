@@ -1,5 +1,5 @@
 ```
-Collection scripts
+max144 Collection scripts
 Personal Hacktivism Site: https://max144.substack.com/
 ```
 # PersonalTor - Mantenga sus IPs privadas y randomizadas
