@@ -42,73 +42,81 @@ display_footer() {
 
 # Funcion HELP
 function help() {
-echo -e "${CYAN}"
-echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⣶⠶⠶⠶⠶⠶⠶⠶⢖⣦⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⡴⠞⠛⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠻⠶⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⠞⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢶⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠀⠀⠀⠀⣴⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣆⠀⠀⠀⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠀⠀⣠⡞⠁⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠈⠹⣦⡀⠀⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⢀⣼⠋⠀⠀⠀⢀⣤⣾⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⣦⣀⠀⠀⠀⠈⢿⣄⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⢀⡾⠁⠀⣠⡾⢁⣾⡿⡋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣆⠹⣦⠀⠀⢻⣆⠀⠀⠀⠀"
-echo "⠀⠀⢀⡾⠁⢀⢰⣿⠃⠾⢋⡔⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⣿⠀⢹⣿⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡌⠻⠆⢿⣧⢀⠀⢻⣆⠀⠀⠀"
-echo "⠀⠀⣾⠁⢠⡆⢸⡟⣠⣶⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣦⡸⣿⠀⣆⠀⢿⡄⠀⠀"
-echo "⠀⢸⡇⠀⣽⡇⢸⣿⠟⢡⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣉⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢤⠙⢿⣿⠀⣿⡀⠘⣿⠀⠀"
-echo "⡀⣿⠁⠀⣿⡇⠘⣡⣾⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢷⣦⡙⠀⣿⡇⠀⢻⡇⠀"
-echo "⢸⡟⠀⡄⢻⣧⣾⡿⢋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣿⣴⣿⠉⡄⢸⣿⠀"
-echo "⢾⡇⢰⣧⠸⣿⡏⢠⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠀⠓⢶⠶⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣆⠙⣿⡟⢰⡧⠀⣿⠀"
-echo "⣸⡇⠰⣿⡆⠹⣠⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⣶⣿⡏⠀⠠⢺⠢⠀⠀⣿⣷⣤⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣧⠸⠁⣾⡇⠀⣿⠀"
-echo "⣿⡇⠀⢻⣷⠀⣿⡿⠰⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⡅⠀⠀⢸⡄⠀⠀⣿⣿⣿⣿⣿⣿⣶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⡆⣰⣿⠁⠀⣿⠀"
-echo "⢸⣧⠀⡈⢿⣷⣿⠃⣰⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⡇⠀⠀⣿⣇⠀⢀⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣸⡀⢿⣧⣿⠃⡀⢸⣿⠀"
-echo "⠀⣿⡀⢷⣄⠹⣿⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⣿⣿⠀⣼⣿⣿⣿⣿⣿⣿⣿⡯⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⢸⡟⢁⣴⠇⣼⡇⠀"
-echo "⠀⢸⡇⠘⣿⣷⡈⢰⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⣿⣿⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⢰⣿⡧⠈⣴⣿⠏⢠⣿⠀⠀"
-echo "⠀⠀⢿⡄⠘⢿⣿⣦⣿⣯⠘⣆⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⡎⢸⣿⣣⣾⡿⠏⠀⣾⠇⠀⠀"
-echo "⠀⠀⠈⢷⡀⢦⣌⠛⠿⣿⡀⢿⣆⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⢀⣿⡁⣼⡿⠟⣉⣴⠂⣼⠏⠀⠀⠀"
-echo "⠀⠀⠀⠈⢷⡈⠻⣿⣶⣤⡁⠸⣿⣆⠡⡀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⢀⣾⡟⠀⣡⣴⣾⡿⠁⣴⠏⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠈⢿⣄⠈⢙⠿⢿⣷⣼⣿⣦⠹⣶⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⢡⣾⣿⣶⣿⠿⢛⠉⢀⣾⠏⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠀⠀⠹⣧⡀⠳⣦⣌⣉⣙⠛⠃⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠐⠛⠋⣉⣉⣤⡶⠁⣰⡿⠁⠀⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠀⠀⠀⠈⠻⣦⡀⠙⠛⠿⠿⠿⠿⠟⠛⠛⣹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⠙⠟⠛⠿⠿⠿⠿⠟⠛⠁⣠⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⢶⣄⠙⠶⣦⣤⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣦⣤⡶⠖⣁⣴⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⣶⣄⡉⠉⠉⠉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠉⠉⠉⠉⣡⣴⡾⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠷⢦⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣠⣴⠶⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠛⠿⠿⠿⠿⠿⠿⠿⠿⠿⠟⠛⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀       "
+echo -e ""
+echo -e "${CYAN}╔══════════════════════════════════════════════════════════════════════╗${NC}"
+echo -e "${CYAN}║${RED}       ▗▄▄▖ ▗▄▄▄▖▗▄▄▖  ▗▄▄▖ ▗▄▖ ▗▖  ▗▖ ▗▄▖ ▗▖ ▗▄▄▄▖▗▄▖ ▗▄▄▖           ${CYAN}║${NC}"
+echo -e "${CYAN}║${RED}       ▐▌ ▐▌▐▌   ▐▌ ▐▌▐▌   ▐▌ ▐▌▐▛▚▖▐▌▐▌ ▐▌▐▌   █ ▐▌ ▐▌▐▌ ▐▌          ${CYAN}║${NC}"
+echo -e "${CYAN}║${RED}       ▐▛▀▘ ▐▛▀▀▘▐▛▀▚▖ ▝▀▚▖▐▌ ▐▌▐▌ ▝▜▌▐▛▀▜▌▐▌   █ ▐▌ ▐▌▐▛▀▚▖          ${CYAN}║${NC}"
+echo -e "${CYAN}║${RED}       ▐▌   ▐▙▄▄▖▐▌ ▐▌▗▄▄▞▘▝▚▄▞▘▐▌  ▐▌▐▌ ▐▌▐▙▄▄▖█ ▝▚▄▞▘▐▌ ▐▌ V2       ${CYAN}║${NC}"
+echo -e "${CYAN}╚══════════════════════════════════════════════════════════════════════╝${NC}"
+echo -e "${BLUE}╔══════════════════════════════════════════════════════════════════════╗${NC}"
+echo -e "${BLUE}║              PersonalTor - Mantenga sus IPs privadas                 ║${NC}"
+echo -e "${BLUE}╚══════════════════════════════════════════════════════════════════════╝${NC}"
 echo -e "${NC}"
-echo -e "${GREEN}"
-echo " =============================================================================="
-echo " PersonalTor - Mantenga sus IPs privadas y randomizadas             "
-echo " =============================================================================="
-echo -e "${NC}"
-echo " Somos anonimos, somos legion, no perdonamos, no olvidamos, esperanos. "
 echo -e "${YELLOW}"
 echo " Requisitos:"
+echo -e "${CYAN}"
 echo " - Tor"
 echo " - Python3"
 echo " - pip"
 echo " - Tornet"
-echo -e "${NC}"
+echo " - Macchanger"
+echo " - Cambiar el Proxy del navegador a 127.0.0.1 puerto 9050"
 echo -e "${YELLOW}"
 echo " Verificar como instalar y obtener las dependencias para este script en:"
-echo -e "${NC}"
-echo -e "${RED}"
+echo -e "${CYAN}"
 echo " SiteOficialTor    : https://www.torproject.org/"
 echo " SiteOficialPython : https://www.python.org/"
 echo " SiteOficialPip    : https://pypi.org/project/pip/"
 echo " SiteOficialTornet  : https://pypi.org/project/tornet/"
-echo -e "${NC}"
+echo " SiteOficialMacchanger : https://github.com/alobbs/macchanger"
 echo -e "${YELLOW}"
 echo " Uso:"
-echo " - Descargue el script y ejecutelo con bash"
+echo -e "${CYAN}"
+echo " - Descargue el script y ejecutelo con terminal bash usando el sudo para "
+echo " obtener permisos de administrador"
+echo -e "${NC}"
+echo " ┌──(suusuario㉿ordenador)-[~/Documentos/Downloads/personalTor]"
+echo " └─$ sudo ./personalTor.sh"
+echo -e "${NC}"
+echo -e "${CYAN}"
 echo " - Siga las instrucciones del menu interactivo"
 echo -e "${NC}"
+echo -e "${YELLOW}"
+echo " Mejoras:"
+echo -e "${CYAN}"
+echo " - Iniciar Tornet ya inicia Tor automaticamente"
+echo " - Para Tornet ya para Tor automaticamente"
+echo " - Podemos cambiar de Mac Address usando macchanger directamente"
+echo " - Tornet no se sobrepone a personalTor"
+echo " - La barra de menu tiene colores para saber el estado de Tor y Tornet"
+echo " - La pantalla se actualiza automaticamente sin perder el formato"
+echo -e "${NC}"
+echo -e "${YELLOW}"
+echo " Nota:"
+echo -e "${CYAN}"
+echo " - Este script es solo para uso de activistas, jornalistas, hacktivistas, etc."
+echo " - No me hago responsable de cualquier daño que pueda causar este script."
+echo " - Pensado para uso en sistemas Linux. (No probado en otros sistemas)"
+echo " - Utilice este script bajo su propio riesgo."
+echo -e "${YELLOW}"
+echo " Contacto:"
+echo -e "${CYAN}"
+echo " - Si tiene alguna pregunta, puede contactarme en:"
+echo " - Twitter: @max144disk"
+echo " - GitHub: max144disk"
+echo " - Repositorio:"
+echo " - https://github.com/max144disk/personalTor"
+echo -e "${NC}"
 echo -e "${BLUE}"
-echo " =============================================================================="
-echo "                      Si teneis dudas leer el README.md                                  "
-echo " =============================================================================="
+echo " ╔══════════════════════════════════════════════════════════════════════╗"
+echo " ║               Si teneis dudas leer el README.md                      ║"
+echo " ╚══════════════════════════════════════════════════════════════════════╝"
 echo -e "${NC}"
 
 # Esperar presionar una tecla para continuar
 read -n 1 -s -r -p "Presione cualquier tecla para continuar..."
-
+clear
 }
 
 ## Funciones de TOR
@@ -116,12 +124,14 @@ read -n 1 -s -r -p "Presione cualquier tecla para continuar..."
 function start_tor() {
     echo "${YELLOW}Iniciando Tor...${NC}"
     sudo systemctl start tor
+    clear
 }
 
 # Funcion de stop TOR
 function stop_tor() {
     echo -e "${YELLOW}Deteniendo Tor...${NC}"
     sudo systemctl stop tor
+    clear
 }
 
 # Saber si TOR ya esta activo
@@ -132,6 +142,7 @@ function status_tor(){
     else
         echo -e "${RED}TOR${NC}"
     fi
+    clear
 }
 
 # Saber si TOR ya esta activo para el menu
@@ -164,6 +175,7 @@ function start_macchanger() {
     sudo macchanger -s "$interface"
     # Presionar una tecla para continuar
     read -n 1 -s -r -p "Presione cualquier tecla para continuar..."
+    clear
 }
 
 # Funcion de mostrar la MAC address actual
@@ -194,6 +206,8 @@ function start_tornet() {
     echo -e "${YELLOW}Iniciando Tornet...${NC}"
     sudo tornet --interval "$interval" --count 0 &> /dev/null &
     tornet_status=true
+
+    clear
 }
 
 # Funcion de stop Tornet
@@ -202,18 +216,21 @@ function stop_tornet() {
     sudo tornet --stop &> /dev/null &
     tornet_status=false
     echo "Tornet ha sido detenido."
+
+    clear
 }
 
 # Function actualizar Tornet
 function update_tornet() {
     echo -e "${YELLOW}"Actualizando Tornet..."${NC}"
     sudo tornet --auto-fix
+
+    clear
 }
 
 # Saber si TORNET ya esta activo para el menu
 function status_tornet_menu(){
-    if $tornet_status
-    then
+   if [ "$tornet_status" = true ]; then
         echo -e "${GREEN}TORNET${NC}"
     else
         echo -e "${RED}TORNET${NC}"
@@ -224,6 +241,7 @@ function status_tornet_menu(){
 function ctrl_c() {
     echo -e "${YELLOW}"Saliendo..."${NC}"
     exit 0
+    clear
 }
 
 
@@ -232,6 +250,7 @@ function ctrl_c() {
 
 ## Menu Aplicacion PersonalTor
 while true; do
+    echo -e ""
     display_header
     echo -e "${CYAN}╔══════════════════════════════════════════════════════════════════════╗${NC}"
     echo -e "${CYAN}║${YELLOW}  Menu ${NC} $(status_tor_menu) $(status_tornet_menu) IP: $(see_actual_ip) MAC: ${GREEN}$(see_actual_mac)"
